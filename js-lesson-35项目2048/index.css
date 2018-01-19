@@ -1,0 +1,166 @@
+/*通用样式*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow: hidden;
+}
+div,
+p,
+h1,
+span {
+	font-weight: bold;
+	font-family: arial;
+}
+
+h1 {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px;
+	background: #9F8B77;
+	border-radius: 6px;
+	color: #FFF;
+	cursor: pointer;
+}
+/*棋盘格*/
+#gamePanel{
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+#gamePanel>p{
+	margin: 8px;
+}
+#girdPanel{
+	background-color: #BBADA0;
+	width: 480px;
+	height: 480px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	/*仅设置上和左的内边距*/
+	padding: 20px 0 0 20px;
+	position: relative;
+}
+.gird{
+	float: left;
+	margin: 0 20px 20px 0;
+	background-color: #ccc0b3;
+}
+.gird,.cell{
+	width: 100px;
+	height: 100px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.cell{
+	position: absolute;
+	text-align: center;
+	line-height: 100px;
+	z-index: 10;
+	color: #776E65;
+	font-size: 32px
+}
+#cell00,#cell01,#cell02,#cell03{
+	top: 20px;
+}
+#cell10,#cell11,#cell12,#cell13{
+	top: 140px;
+}
+#cell20,#cell21,#cell22,#cell23{
+	top: 260px;
+}
+#cell30,#cell31,#cell32,#cell33{
+	top: 380px;
+}
+
+#cell00,#cell10,#cell20,#cell30{
+	left: 20px;
+}
+#cell01,#cell11,#cell21,#cell31{
+	left: 140px;
+}
+#cell02,#cell12,#cell22,#cell32{
+	left: 260px;
+}
+#cell03,#cell13,#cell23,#cell33{
+	left: 380px;
+}
+.num2{
+	background-color: #EEE4DA;
+}
+.num4{
+	background-color: #EDE0CB;
+}
+.num8{
+	background-color: #F2B179;
+}
+.num16{
+	background-color: #f59563;
+}
+.num32{
+	background-color: #f67cf4;
+}
+.num64{
+	background-color: #f65e38;
+}
+.num128{
+	background-color: #edcf72;
+}
+.num256{
+	background-color: #edcc61;
+}
+.num512{
+	background-color: #339933;
+}
+.num1024{
+	background-color: #33b5e5;
+}
+.num2048{
+	background-color: #0099cc;
+}
+.num4096{
+	background-color: #A6C;
+}
+.num8192{
+	background-color: #9933cc;
+}
+.num16,.num32,.num64,.num128,.num256,.num512,.num1024,.num2048,.num4096,.num8192{
+	color: white;
+}
+/*gameOver*/
+#gameOver{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+#gameOver>div{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
+#gameOver>p{
+	width: 300px;
+	background-color:#FFFFFF ;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	text-align: center;
+	padding: 20px 0;
+	line-height: 2;
+}
+#gameOver .button{
+	line-height: 1;
+}
